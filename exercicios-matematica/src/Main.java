@@ -14,6 +14,7 @@ public class Main {
         diferenca = (a * b - c * d);
         System.out.println("Diferença = " + diferenca);
 
+
         sc.close();
     }
 }
