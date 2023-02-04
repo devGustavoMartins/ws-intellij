@@ -12,7 +12,7 @@ public class Main {
             System.out.println(counter);
             counter+=1;
         }
-
+        System.out.println("Acabou");
         sc.close();
     }
 }
