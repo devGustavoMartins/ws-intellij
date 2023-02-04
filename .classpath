@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="bitwise/src"/>
+	<classpathentry kind="src" path="condicional-ternaria/src"/>
+	<classpathentry kind="src" path="debug/src"/>
+	<classpathentry kind="src" path="desafios-condicionais/src"/>
+	<classpathentry kind="src" path="escopo/src"/>
+	<classpathentry kind="src" path="exercicios-matematica/src"/>
+	<classpathentry kind="src" path="for/src"/>
+	<classpathentry kind="src" path="funcoes-matematicas/src"/>
+	<classpathentry kind="src" path="funcoes/src"/>
+	<classpathentry kind="src" path="switch-case/src"/>
+	<classpathentry kind="src" path="while/src"/>
+	<classpathentry kind="output" path="bitwise/out/production/bitwise"/>
+</classpath>
