@@ -9,12 +9,20 @@ public class Product {
     public int quantity;
     Scanner sc = new Scanner(System.in);
 
+    public void InitialStats(){
+        System.out.println("Product data:");
+        System.out.println("Name: " + name);
+        System.out.println("Price: " + price);
+        System.out.println("Quantity in stock: " + quantity);
+    }
+
     public double TotalValueInStock(){
         totalPrice = quantity * price;
         return totalPrice;
     }
 
     public void AddProducts(){
+        System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
         int addQnt = sc.nextInt();
         quantity += addQnt;
@@ -22,6 +30,7 @@ public class Product {
     }
 
     public void RemoveProducts(){
+        System.out.println();
         System.out.print("Enter the number of products to be removed from stock: ");
         int removeQnt = sc.nextInt();
         quantity -= removeQnt;

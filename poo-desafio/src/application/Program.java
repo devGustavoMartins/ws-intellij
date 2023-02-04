@@ -14,13 +14,8 @@ public class Program {
         tv = new Product();
         tv.name = "TV"; tv.price = 900.00; tv.quantity = 10;
 
-        System.out.println("Product data:");
-        System.out.println("Name: " + tv.name);
-        System.out.println("Price: " + tv.price);
-        System.out.println("Quantity in stock: " + tv.quantity);
-        System.out.println();
+        tv.InitialStats();
         tv.UpdateStats();
-        System.out.println();
         tv.AddProducts();
         tv.RemoveProducts();
 
