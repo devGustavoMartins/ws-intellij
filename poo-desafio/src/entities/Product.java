@@ -42,4 +42,11 @@ public class Product {
         System.out.printf("Product data: %s, $ %.2f, %d units, Total : $ %.2f", name, price, quantity, TotalValueInStock());
         System.out.println();
     }
+
+    public void Protocol(){
+        InitialStats();
+        UpdateStats();
+        AddProducts();
+        RemoveProducts();
+    }
 }
