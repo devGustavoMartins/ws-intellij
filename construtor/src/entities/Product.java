@@ -3,9 +3,11 @@ package entities;
 import java.util.Scanner;
 
 public class Product {
-    public String name;
-    public double price;
-    public int quantity;
+    Scanner sc = new Scanner(System.in);
+    private String name;
+    private double price;
+    private int quantity;
+
 
     public Product(String name, double price, int quantity) {
         this.name = name;
@@ -13,7 +15,30 @@ public class Product {
         this.quantity = quantity;
     }
 
-    Scanner sc = new Scanner(System.in);
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
 
     public void InitialStats(){
         System.out.println("Product data:");
