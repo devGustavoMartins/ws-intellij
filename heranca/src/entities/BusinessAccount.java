@@ -27,4 +27,10 @@ public class BusinessAccount extends Account{
             System.out.printf("Loan of R$%.2f with R$%.2f of tax%n", amount, 10.00);
         }
     }
+
+    @Override
+    public void withdraw(Double amount){
+        super.withdraw(amount);
+        balance -= 5.0;
+    }
 }
