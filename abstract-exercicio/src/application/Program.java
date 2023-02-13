@@ -29,7 +29,6 @@ public class Program {
             if (shape == 'r'){
                 System.out.print("Color (Black/Blue/Red): ");
                 String color = sc.next();
-                color.toUpperCase();
 
                 System.out.print("Width: ");
                 double width = sc.nextDouble();
@@ -41,7 +40,6 @@ public class Program {
             }else if(shape == 'c'){
                 System.out.print("Color (Black/Blue/Red): ");
                 String color = sc.next();
-                color.toUpperCase();
 
                 System.out.print("Radius: ");
                 double radius = sc.nextDouble();
