@@ -14,11 +14,6 @@ public class Program {
         List<Shape> shapes = new ArrayList<>();
         shapes.add(new Rectangle(3.0, 2.0));
         shapes.add(new Circle(2.0));
-
-        List<Circle> circles = new ArrayList<>();
-        circles.add(new Circle(2.0));
-        circles.add(new Circle(3.0));
-
         System.out.println("Total area: " + String.format("%.2f", totalArea(shapes)));
     }
 
