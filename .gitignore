@@ -1,2 +1,3 @@
 /jdbc-1/db.properties
 /jdbc-2/db.properties
+*.properties
