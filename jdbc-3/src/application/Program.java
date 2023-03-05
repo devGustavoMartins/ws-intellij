@@ -29,7 +29,7 @@ public class Program {
             st.setInt(5, 4);
              */
 
-            st = conn.prepareStatement("insert into department (Name) values ('D1'), ('D2')",
+            st = conn.prepareStatement("insert into department (Name) values ('D1')",
                     Statement.RETURN_GENERATED_KEYS);
 
             int rowsAffected = st.executeUpdate();
