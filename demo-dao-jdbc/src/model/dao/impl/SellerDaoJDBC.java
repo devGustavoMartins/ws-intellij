@@ -205,4 +205,31 @@ public class SellerDaoJDBC implements SellerDao {
             DB.closeResultSet(rs);
         }
     }
+
+    @Override
+    public int totalCount() {
+
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        try {
+            st = conn.prepareStatement(
+                    "SELECT seller.*,department.Name as DepName " +
+                            "FROM seller INNER JOIN department " +
+                            "ON seller.DepartmentId = department.Id ");
+            rs = st.executeQuery();
+
+            List<Integer> list = new ArrayList<>();
+
+            while (rs.next()){
+                list.add(0);
+            }
+            return list.size();
+
+        }catch (SQLException e){
+            throw new DbException(e.getMessage());
+        }finally {
+            DB.closeStatement(st);
+            DB.closeResultSet(rs);
+        }
+    }
 }
