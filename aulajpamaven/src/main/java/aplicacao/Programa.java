@@ -11,7 +11,7 @@ public class Programa {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
         EntityManager em = emf.createEntityManager();
 
-        Pessoa p = em.find(Pessoa.class, 3);
+        Pessoa p = em.find(Pessoa.class, 2);
 
         em.getTransaction().begin();
         em.remove(p);
