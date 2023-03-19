@@ -23,7 +23,7 @@ public class Program {
             System.out.printf("Employee #%d data:%n", (i+1));
 
             System.out.print("Outsourced (y/n)? ");
-            char awnser = sc.next().charAt(0);
+            char answer = sc.next().charAt(0);
 
             System.out.print("Name: ");
             sc.nextLine();
@@ -35,7 +35,7 @@ public class Program {
             System.out.print("Value per hour: ");
             double vph = sc.nextDouble();
 
-            if (awnser == 'y'){
+            if (answer == 'y'){
                 System.out.print("Additional charge: ");
                 double addC = sc.nextDouble();
                 employees.add(new OutsourcedEmployee(name, hours, vph, addC));
