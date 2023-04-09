@@ -13,11 +13,11 @@ public class Program {
         Account acc = new Account();
 
         System.out.print("Enter account number: ");
-        acc.number = sc.nextInt();
+        acc.setNumber(sc.nextInt());
 
         System.out.print("Enter account holder: ");
-        acc.holder = sc.nextLine();
-        acc.holder = sc.nextLine();
+        sc.nextLine();
+        acc.setHolder(sc.nextLine());
 
         System.out.print("Is there an initial deposit (y/n)? ");
         char answer = sc.next().charAt(0);
@@ -30,7 +30,6 @@ public class Program {
 
         acc.Deposit();
         acc.Withdraw();
-
 
         sc.close();
     }
